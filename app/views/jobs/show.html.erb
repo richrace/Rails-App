@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+<br />
+<div>
+	<p>
+	<b>Title:</b> <%= @job.broadcast.title %>
+	</p>
+	<p>
+	<b>Date Created:</b> <%= @job.created_at.strftime("%Y-%m-%d %H:%M:%S") %>
+	</p>
+	<p>
+	<b>Author:</b> <%= @job.broadcast.getAuthor %>
+	</p>
+	<br />
+	<p>
+	<b>Content:</b>
+	</p>
+	<br /> 
+	<%=sanitize @job.broadcast.content %> 
+	<br />
+</div>
+<div>
+	<br />
+	<%= link_to 'Back', jobs_path %>
+	<%= link_to 'Delete', @job, :confirm => 'Are you sure?', :method => :delete if is_author_or_editor? @job.broadcast %>
+</div>

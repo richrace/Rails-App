@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+<br />
+<div>
+	<b>Title:</b> <%= @newsblog.broadcast.title %>
+	</p>
+	<p>
+	<b>Date Created:</b> <%= @newsblog.created_at.strftime("%Y-%m-%d %H:%M:%S") %>
+	</p>
+	<p>
+	<b>Author:</b> <%= @newsblog.broadcast.getAuthor %>
+	</p>
+	<br />
+	<p>
+	<b>Content:</b> 
+	</p>
+	<br />
+	<p>
+		<%=sanitize @newsblog.broadcast.content %> 
+	<p>
+</div>
+<div>
+	<br />
+	<%= link_to 'Back', newsblogs_path %> 
+	<%= link_to 'Delete', @newsblog, :confirm => 'Are you sure?', :method => :delete if is_author_or_editor? @newsblog.broadcast %>
+</div>

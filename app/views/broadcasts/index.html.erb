@@ -1,0 +1,52 @@
+<h1>Broadcasts</h1>
+
+<% if @broadcasts.length > 0 -%>
+  <table class="sortable" id="sortabletable">
+    <tr class="list-line-even">
+      <th width="15%">Date sent</th>
+			<th class="unsortable">Title</th>
+      <th class="unsortable">Feeds</th>
+			<th width="" class="unsortable">Type</th>
+			<th width="100px" class="unsortable">View Blog</th>
+      <th width="40px" class="unsortable"/>
+      <th width="40px" class="unsortable"/>
+    </tr>
+
+  <% @broadcasts.each do |broadcast| %>
+    <tr class="<%= cycle('list-line-odd', 'list-line-even')%>">
+      <td><%= broadcast.created_at %></td>
+			<td width='200'><%= broadcast.title %></td>
+      <td>
+         <%= display_feeds broadcast %>
+      </td>
+			<td>
+				<%= broadcast.feed_type %>
+			</td>
+			<td>
+				<%= link_to 'View Post', url_for(broadcast.job) if broadcast.has_job? %>
+				<%= link_to 'View Post', url_for(broadcast.newsblog) if broadcast.has_newsblog? %>
+			</td>
+      <td><%= link_to image_tag('/images/eye.jpg', :alt=>'Show',
+                                :title=>'Show details', :border=>'0'),
+                      broadcast_path(broadcast, :page=>@broadcasts.current_page) if is_author_or_editor? broadcast %></td>
+      <td><%= link_to image_tag('/images/destroy.gif', :alt=>'Destroy',
+                                :title=>'Destroy item', :border=>'0'),
+                      broadcast_path(broadcast, :page => @broadcasts.current_page),
+                                                :confirm => 'Are you sure?',
+                                                :method => :delete if is_author_or_editor? broadcast %></td>
+    </tr>
+<% end %>
+</table>
+
+<br />
+<% end -%>
+<div class="digg_pagination">
+      <div clas="page_info">
+        <%= page_entries_info @broadcasts %>
+      </div>
+      <%= will_paginate @broadcasts, :container => false %>
+</div>
+<br />
+<%= link_to 'New broadcast', new_broadcast_path(:page=>@broadcasts.current_page) %>
+<br/>
+<br/>

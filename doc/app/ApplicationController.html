@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+  <title>Class: ApplicationController</title>
+
+  <link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+  <script src="./js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="./app/controllers/application_controller_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">ActionController::Base</p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-i-access_denied">#access_denied</a></li>
+          
+          <li><a href="#method-i-admin_denied">#admin_denied</a></li>
+          
+          <li><a href="#method-i-admin_required">#admin_required</a></li>
+          
+          <li><a href="#method-i-current_user">#current_user</a></li>
+          
+          <li><a href="#method-i-current_user-3D">#current_user=</a></li>
+          
+          <li><a href="#method-i-is_admin-3F">#is_admin?</a></li>
+          
+          <li><a href="#method-i-logged_in-3F">#logged_in?</a></li>
+          
+          <li><a href="#method-i-login_from_basic_auth">#login_from_basic_auth</a></li>
+          
+          <li><a href="#method-i-login_from_session">#login_from_session</a></li>
+          
+          <li><a href="#method-i-login_required">#login_required</a></li>
+          
+          <li><a href="#method-i-redirect_back_or_default">#redirect_back_or_default</a></li>
+          
+          <li><a href="#method-i-set_locale">#set_locale</a></li>
+          
+          <li><a href="#method-i-store_location">#store_location</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <!-- Included Modules -->
+      <div id="includes-section" class="section">
+        <h3 class="section-header">Included Modules</h3>
+        <ul class="link-list">
+        
+        
+          <li><span class="include">SslRequirement</span></li>
+        
+        
+        </ul>
+      </div>
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="./ApplicationController.html">ApplicationController</a></li>
+        
+          <li><a href="./ApplicationHelper.html">ApplicationHelper</a></li>
+        
+          <li><a href="./Broadcast.html">Broadcast</a></li>
+        
+          <li><a href="./BroadcastService.html">BroadcastService</a></li>
+        
+          <li><a href="./BroadcastsController.html">BroadcastsController</a></li>
+        
+          <li><a href="./BroadcastsHelper.html">BroadcastsHelper</a></li>
+        
+          <li><a href="./Feed.html">Feed</a></li>
+        
+          <li><a href="./HomeController.html">HomeController</a></li>
+        
+          <li><a href="./HomeHelper.html">HomeHelper</a></li>
+        
+          <li><a href="./Image.html">Image</a></li>
+        
+          <li><a href="./ImageService.html">ImageService</a></li>
+        
+          <li><a href="./NewsBroadcast.html">NewsBroadcast</a></li>
+        
+          <li><a href="./SessionsController.html">SessionsController</a></li>
+        
+          <li><a href="./SessionsHelper.html">SessionsHelper</a></li>
+        
+          <li><a href="./User.html">User</a></li>
+        
+          <li><a href="./UserDetail.html">UserDetail</a></li>
+        
+          <li><a href="./UserDetailsHelper.html">UserDetailsHelper</a></li>
+        
+          <li><a href="./UsersController.html">UsersController</a></li>
+        
+          <li><a href="./UsersHelper.html">UsersHelper</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">ApplicationController</h1>
+
+    <div id="description" class="description">
+      
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+      <!-- Constants -->
+      <div id="constants-list" class="section">
+        <h3 class="section-header">Constants</h3>
+        <dl>
+        
+          <dt><a name="SSL_SERVER_BEING_USED">SSL_SERVER_BEING_USED</a></dt>
+          
+          <dd class="description"><p>Set this to true if a server such as Apache with SSL proxy forwarding to
+Mongrel or similar rails server. This will trigger correct ssl_required
+behaviour across the application’s pages</p></dd>
+          
+        
+        </dl>
+      </div>
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="protected-instance-method-details" class="method-section section">
+        <h3 class="section-header">Protected Instance Methods</h3>
+
+      
+        <div id="access_denied-method" class="method-detail ">
+          <a name="method-i-access_denied"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">access_denied</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>To support RESTful authentication we need to treat web browser access
+differently to web service B2B style interaction: o For HTML C2B based
+requests we redirect users to a login screen as part of</p>
+
+<pre>form-based authentication. Note that we store the original request
+URI in the user's session so that we can go there after they have submitted
+their credentials. We cannot redirect non-human
+users and so this doesn't work for B2B web service requests.</pre>
+
+<p>o For B2B web service request requiring XML or JSON we rely on HTTP Basic
+Authentication.</p>
+
+<pre>If the Accept header specifies JSON or XML the format.any part is executed,
+and a 401 status response is sent to the caller with WWW-Authenticate header set, i.e.
+requesting the credentials</pre>
+            
+
+            
+            <div class="method-source-code" id="access_denied-source">
+<pre>
+<span class="ruby-comment"># File app/controllers/application_controller.rb, line 34</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">access_denied</span>
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-keyword">do</span>
+      <span class="ruby-identifier">session</span>[<span class="ruby-value">:original_uri</span>] = <span class="ruby-identifier">request</span>.<span class="ruby-identifier">request_uri</span>
+      <span class="ruby-identifier">flash</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-string">'Please log in'</span>
+      <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">new_session_path</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-comment">#(Some browsers, notably IE6, send Accept: */* and trigger</span>
+    <span class="ruby-comment"># the 'format.any' block incorrectly.</span>
+    <span class="ruby-comment"># See http://bit.ly/ie6_borken or http://bit.ly/ie6_borken2</span>
+    <span class="ruby-comment"># for a workaround.)</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">any</span>(<span class="ruby-value">:json</span>, <span class="ruby-value">:xml</span>) <span class="ruby-keyword">do</span>
+      <span class="ruby-identifier">request_http_basic_authentication</span> <span class="ruby-string">'Web Password'</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- access_denied-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- access_denied-method -->
+
+      
+        <div id="admin_denied-method" class="method-detail ">
+          <a name="method-i-admin_denied"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">admin_denied</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="admin_denied-source">
+<pre>
+<span class="ruby-comment"># File app/controllers/application_controller.rb, line 93</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">admin_denied</span>
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-keyword">do</span>
+      <span class="ruby-identifier">flash</span>[<span class="ruby-value">:error</span>] = <span class="ruby-constant">I18n</span>.<span class="ruby-identifier">t</span>(<span class="ruby-string">'sessions.must-be-admin'</span>)
+      <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">root_path</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- admin_denied-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- admin_denied-method -->
+
+      
+        <div id="admin_required-method" class="method-detail ">
+          <a name="method-i-admin_required"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">admin_required</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="admin_required-source">
+<pre>
+<span class="ruby-comment"># File app/controllers/application_controller.rb, line 89</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">admin_required</span>
+  <span class="ruby-identifier">is_admin?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">admin_denied</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- admin_required-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- admin_required-method -->
+
+      
+        <div id="current_user-method" class="method-detail ">
+          <a name="method-i-current_user"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">current_user</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Accesses the current user from either the session or via a db lookup as
+part of basic authentication.</p>
+            
+
+            
+            <div class="method-source-code" id="current_user-source">
+<pre>
+<span class="ruby-comment"># File app/controllers/application_controller.rb, line 72</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">current_user</span>
+  <span class="ruby-identifier">login_from_session</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">login_from_basic_auth</span> 
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- current_user-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- current_user-method -->
+
+      
+        <div id="current_user-3D-method" class="method-detail ">
+          <a name="method-i-current_user-3D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">current_user=</span><span
+              class="method-args">(new_user)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Store the given user id in the session. We cheat a bit and do this even for
+basic authentication. If the session cookie is handled by the caller then
+let’s take advantage of it. Perhaps breaks spirit of REST a little but
+improves performance where we can.</p>
+            
+
+            
+            <div class="method-source-code" id="current_user-3D-source">
+<pre>
+<span class="ruby-comment"># File app/controllers/application_controller.rb, line 80</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">current_user=</span>(<span class="ruby-identifier">new_user</span>)
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:user_id</span>] = <span class="ruby-identifier">new_user</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">new_user</span>.<span class="ruby-identifier">id</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- current_user-3D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- current_user-3D-method -->
+
+      
+        <div id="is_admin-3F-method" class="method-detail ">
+          <a name="method-i-is_admin-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">is_admin?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Some very lightweight authorisation checking</p>
+            
+
+            
+            <div class="method-source-code" id="is_admin-3F-source">
+<pre>
+<span class="ruby-comment"># File app/controllers/application_controller.rb, line 85</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">is_admin?</span>
+  <span class="ruby-identifier">current_user</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">login</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;admin&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">false</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- is_admin-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- is_admin-3F-method -->
+
+      
+        <div id="logged_in-3F-method" class="method-detail ">
+          <a name="method-i-logged_in-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">logged_in?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="logged_in-3F-source">
+<pre>
+<span class="ruby-comment"># File app/controllers/application_controller.rb, line 62</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">logged_in?</span>
+  <span class="ruby-operator">!</span><span class="ruby-operator">!</span><span class="ruby-identifier">current_user</span>
+  <span class="ruby-comment"># The following is a longer winded version of the above. Just want to make sure</span>
+  <span class="ruby-comment"># nil values map to false and anything else to true. Methods with ? postfix</span>
+  <span class="ruby-comment"># should really return true or false values</span>
+  <span class="ruby-comment"># current_user ? true : false</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- logged_in-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- logged_in-3F-method -->
+
+      
+        <div id="login_from_basic_auth-method" class="method-detail ">
+          <a name="method-i-login_from_basic_auth"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">login_from_basic_auth</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="login_from_basic_auth-source">
+<pre>
+<span class="ruby-comment"># File app/controllers/application_controller.rb, line 56</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">login_from_basic_auth</span>
+  <span class="ruby-identifier">authenticate_with_http_basic</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">login</span>, <span class="ruby-identifier">password</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">current_user</span> = <span class="ruby-constant">UserDetail</span>.<span class="ruby-identifier">authenticate</span>(<span class="ruby-identifier">login</span>, <span class="ruby-identifier">password</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- login_from_basic_auth-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- login_from_basic_auth-method -->
+
+      
+        <div id="login_from_session-method" class="method-detail ">
+          <a name="method-i-login_from_session"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">login_from_session</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="login_from_session-source">
+<pre>
+<span class="ruby-comment"># File app/controllers/application_controller.rb, line 51</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">login_from_session</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">current_user</span> = 
+      <span class="ruby-constant">UserDetail</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">session</span>[<span class="ruby-value">:user_id</span>]) <span class="ruby-keyword">if</span> <span class="ruby-identifier">session</span>[<span class="ruby-value">:user_id</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- login_from_session-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- login_from_session-method -->
+
+      
+        <div id="login_required-method" class="method-detail ">
+          <a name="method-i-login_required"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">login_required</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="login_required-source">
+<pre>
+<span class="ruby-comment"># File app/controllers/application_controller.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">login_required</span>
+  <span class="ruby-identifier">logged_in?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">access_denied</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- login_required-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- login_required-method -->
+
+      
+        <div id="redirect_back_or_default-method" class="method-detail ">
+          <a name="method-i-redirect_back_or_default"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">redirect_back_or_default</span><span
+              class="method-args">(default)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Redirect to the URI stored by the most recent <a
+href="ApplicationController.html#method-i-store_location">store_location</a>
+call or to the passed default.  Set an appropriately modified</p>
+
+<pre>after_filter :store_location, :only =&gt; [:index, :new, :show, :edit]</pre>
+
+<p>for any controller you want to be bounce-backable.</p>
+            
+
+            
+            <div class="method-source-code" id="redirect_back_or_default-source">
+<pre>
+<span class="ruby-comment"># File app/controllers/application_controller.rb, line 113</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">redirect_back_or_default</span>(<span class="ruby-identifier">default</span>)
+        <span class="ruby-identifier">redirect_to</span>(<span class="ruby-identifier">session</span>[<span class="ruby-value">:return_to</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">default</span>)
+        <span class="ruby-identifier">session</span>[<span class="ruby-value">:return_to</span>] = <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- redirect_back_or_default-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- redirect_back_or_default-method -->
+
+      
+        <div id="set_locale-method" class="method-detail ">
+          <a name="method-i-set_locale"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">set_locale</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="set_locale-source">
+<pre>
+<span class="ruby-comment"># File app/controllers/application_controller.rb, line 118</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_locale</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:locale</span>] = <span class="ruby-identifier">params</span>[<span class="ruby-value">:locale</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:locale</span>]
+  <span class="ruby-constant">I18n</span>.<span class="ruby-identifier">locale</span> = <span class="ruby-identifier">session</span>[<span class="ruby-value">:locale</span>] <span class="ruby-operator">||</span> <span class="ruby-constant">I18n</span>.<span class="ruby-identifier">default_locale</span>
+
+  <span class="ruby-identifier">locale_path</span> = <span class="ruby-node">&quot;#{LOCALES_DIRECTORY}#{I18n.locale}.yml&quot;</span>
+
+  <span class="ruby-keyword">unless</span> <span class="ruby-constant">I18n</span>.<span class="ruby-identifier">load_path</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">locale_path</span>
+    <span class="ruby-constant">I18n</span>.<span class="ruby-identifier">load_path</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">locale_path</span>
+    <span class="ruby-constant">I18n</span>.<span class="ruby-identifier">backend</span>.<span class="ruby-identifier">send</span>(<span class="ruby-value">:init_translations</span>)
+  <span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">err</span>
+  <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">error</span> <span class="ruby-identifier">err</span>
+  <span class="ruby-identifier">flash</span>.<span class="ruby-identifier">now</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-node">&quot;#{I18n.locale} translation not available&quot;</span>
+
+  <span class="ruby-constant">I18n</span>.<span class="ruby-identifier">load_path</span> <span class="ruby-operator">-=</span> [<span class="ruby-identifier">locale_path</span>]
+  <span class="ruby-constant">I18n</span>.<span class="ruby-identifier">locale</span> = <span class="ruby-identifier">session</span>[<span class="ruby-value">:locale</span>] = <span class="ruby-constant">I18n</span>.<span class="ruby-identifier">default_locale</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- set_locale-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- set_locale-method -->
+
+      
+        <div id="store_location-method" class="method-detail ">
+          <a name="method-i-store_location"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">store_location</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Store the URI of the current request in the session.</p>
+
+<p>We can return to this location by calling <a
+href="ApplicationController.html#method-i-redirect_back_or_default">redirect_back_or_default</a>.</p>
+            
+
+            
+            <div class="method-source-code" id="store_location-source">
+<pre>
+<span class="ruby-comment"># File app/controllers/application_controller.rb, line 105</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">store_location</span>
+        <span class="ruby-identifier">session</span>[<span class="ruby-value">:return_to</span>] = <span class="ruby-identifier">request</span>.<span class="ruby-identifier">fullpath</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- store_location-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- store_location-method -->
+
+      
+      </div><!-- protected-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+<% SALT = "testSALTNaCL" unless defined?(SALT) %>
+
+admin:
+    id: 1
+    login: "admin"
+    user_id: 1
+    level: 0
+    salt: <%= SALT %>
+    crypted_password: <%= UserDetail.encrypt_password("secret", SALT) %>
+    
+contributor:
+    id: 2
+    login: "contrib"
+    user_id: 2
+    level: 1
+    
+register:
+    id: 3
+    login: "register"
+    user_id: 3
+    level: 2
+
+normal:
+    id: 4
+    login: "normal"
+    user_id: 4
+    level: 5
+    
+editor:
+    id: 5
+    login: "editor"
+    user_id: 5
+    level: 3

@@ -1,0 +1,34 @@
+<h1>Jobs</h1>
+
+<% if @jobs.length > 0 -%>
+<table class="sortable" id="sortabletable">
+  <tr>
+    <th width='35%'class='unsortable'>Title</th> 
+		<th width='20%'>Date sent</th>	
+    <th width='55%' class='unsortable'>Content</th>
+  </tr>
+<% @jobs.each do |job| %>
+  <tr>
+    <td>
+			<%= job.broadcast.title %> 
+		</td>
+		<td>
+			<%= job.created_at %>
+		</td>
+		<td>
+			<%=sanitize truncate(job.broadcast.content, :omission => '...', :length =>150) %> <%= link_to 'Read More', job %>
+		</td>
+  </tr>
+<% end %>
+</table>
+
+
+<br />
+<% end -%>
+<div class="digg_pagination">
+      <div clas="page_info">
+        <%= page_entries_info @jobs %>
+      </div>
+      <%= will_paginate @jobs, :container => false %>
+</div>
+<div><%= link_to 'RSS', :controller => 'jobs', :action => 'feed',:format => :rss %> | <%= link_to 'Atom', :controller => 'jobs', :action => 'feed',:format => 'atom' %></div>

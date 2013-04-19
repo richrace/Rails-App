@@ -1,0 +1,46 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+admin:
+    id: 1
+    surname: Loftus
+    firstname: Chris
+    phone: 622422
+    grad_year: 1985
+    jobs: false
+    email: cwl@aber.ac.uk
+
+contributor:
+    id: 2
+    surname: User_2
+    firstname: Test
+    phone: 622422
+    grad_year: 1985
+    jobs: false
+    email: ut2@aber.ac.uk
+    
+register:
+    id: 3
+    surname: User_3
+    firstname: Test
+    phone: 622422
+    grad_year: 1985
+    jobs: false
+    email: ut3@aber.ac.uk
+    
+normal:
+    id: 4
+    surname: User_4
+    firstname: Test
+    phone: 622422
+    grad_year: 1985
+    jobs: true
+    email: ut4@aber.ac.uk
+
+editor:
+    id: 5
+    surname: User_5
+    firstname: Test
+    phone: 622422
+    grad_year: 1985
+    jobs: false
+    email: ut5@aber.ac.uk

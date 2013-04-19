@@ -1,0 +1,427 @@
+/* Global styles */
+* {
+    margin: 0;
+    /*color: black;*/
+    font-family:"Arial";
+    /* padding:0;*/
+}
+
+body {  
+    background-color: #C5F1F9;
+}
+
+H1 {
+    padding-top: 1em;
+}
+
+textarea {
+	resize: none;
+}
+
+.job_table_h {
+	text-align:left;
+}
+
+.content{
+    margin-left: 1em;
+}
+
+.locale {
+    float:left;
+    padding-top: 0.2em;
+    font-size: 0.75em;
+}
+
+/* Banner styles */
+
+.header{
+    height:5em;
+    background-color: #115859;
+    width:100%;
+}
+
+.login-form{
+    float:right;
+    padding-right:1em;   
+}
+
+.login-form div {
+    margin-right: 0.5em;
+    margin-top: 2em;
+}
+
+.login-form p {
+    color:#C5F1F9;
+}
+
+.register{
+    color:#aaaaaa;
+    text-align: center;
+    font-size: 0.75em;
+    float:right;
+    padding-right:1em;
+}
+
+.register p{
+    display:block;
+    color:#C5F1F9;
+    padding-bottom: 0.5em;
+    font-size: 1.25em;
+}
+
+.register A{
+   color:#aaaaaa;
+   display:block;
+   text-decoration: underline;
+}
+
+.register A:link,
+.register A:hover,
+.register A:active,
+.register A.here:link,
+.register A.here:visited{ 
+    color:#888888;
+}
+
+.flash_notice {
+    color: #ccffaa;
+}
+
+.flash_error {
+    color: #ff8899;
+}
+
+#flash_message {
+    position:absolute;
+    top:1.2em;
+    left:0.5em;
+}
+
+/* Following is CSS for tabbing taken from: http://clagnut.com/sandbox/csstabs/*/
+
+.navigation UL {
+    float:left;
+    padding-top:1em;
+    padding-left: 0;
+    margin:2em 0 0 0;
+    line-height:1em;
+    list-style:none;
+}
+
+
+.navigation LI {
+    float:left;
+    margin:0;
+    padding-top:0.5em;
+    padding-bottom:0.6em;
+}
+
+.navigation A {
+    color:#aaaaaa;
+    /*display:block;*/
+    text-decoration:none;
+    font-weight:bold;
+    margin:0;
+    padding-left:0.5em;
+    padding-right:0.5em;
+}
+
+.navigation .selected {
+    background-color: #C5F1F9;
+}
+
+.navigation A:hover,
+.navigation A:active,
+.navigation A.here:link,
+.navigation A.here:visited {
+    color:#888888;
+}
+
+.navigation A.here:link,
+.navigation A.here:visited {
+    position:relative;
+    z-index:102;
+}
+
+/* Users accounts page styles */
+
+.main-input-area{
+    padding-top:1em;
+    float: left;
+    /*width:60%;*/
+    display:block;
+}
+
+.list-line-even {
+    background:   #cccccc;
+}
+
+.list-line-odd {
+    background:   #dddddd;
+}
+
+.content-area{
+    margin-top: 10em;
+}
+
+.content-detail{
+    float:left;
+    margin-left:1em;
+}
+
+.content-detail div{
+    margin-bottom:1em;
+    padding-bottom:1em;
+}
+
+.content-detail div label{
+    float:left;
+}
+
+.content-detail div span{
+    /*float:right;*/
+}
+
+.content-detail input {
+    /*float:right;*/
+}
+
+.content-image{
+    float:left;
+}
+
+.content-links{
+    margin-top:0.5em;
+}
+
+.sub-input-area  {
+    /*width:30%;*/
+    float:left;
+    margin-right: 1em;
+    margin-left: 2em;
+    padding-top:1em;
+    display:block;
+}
+
+.sub-input-area .checkboxes p {
+    padding-bottom: 0.5em;
+}
+
+.sub-input-area .checkboxes {
+    margin-right: 0;
+}
+
+#search-submit {
+    margin-right:1em;
+}
+
+#user-detail{
+    margin-top: 2em;
+}
+
+div .auto_complete {
+    width: 350px;
+    max-height:150px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    background: white;
+}
+
+div .auto_complete ul {
+    margin:0;
+    border:1px solid #888;
+    padding:0;
+    width:100%;
+
+    list-style-type:none;
+}
+
+div .auto_complete ul li {
+    margin:0;
+    padding:3px;
+    text-align: left;
+}
+
+div .auto_complete ul li.selected {
+    background-color: #ffb;
+}
+
+div .auto_complete ul strong.highlight {
+    color: #800;
+    margin:0;
+    padding:0;
+}
+
+/* Digg style pagination taken from mislav-will_paginate rails gem doc */
+.digg_pagination {
+    /*background: white;*/
+    /* self-clearing method: */
+}
+
+.digg_pagination a, .digg_pagination span, .digg_pagination em {
+    padding: .2em .5em;
+    display: block;
+    float: left;
+    margin-right: 1px;
+}
+
+.digg_pagination span.disabled {
+    color: #999;
+    border: 1px solid #DDD;
+}
+
+.digg_pagination em.current {
+    font-weight: bold;
+    background: #2E6AB1;
+    color: white;
+    border: 1px solid #2E6AB1;
+}
+
+.digg_pagination a {
+    text-decoration: none;
+    color: #105CB6;
+    border: 1px solid #9AAFE5;
+}
+
+.digg_pagination a:hover, .digg_pagination a:focus {
+    color: #003;
+    border-color: #003;
+}
+
+.digg_pagination .page_info {
+    background: #2E6AB1;
+    color: white;
+    padding: .4em .6em;
+    width: 22em;
+    margin-bottom: .3em;
+    text-align: center;
+}
+
+.digg_pagination .page_info b {
+    color: #003;
+    background: #6aa6ed;
+    padding: .1em .25em;
+}
+
+.digg_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+* html .digg_pagination {
+    height: 1%;
+}
+
+*:first-child+html .digg_pagination {
+    overflow: hidden;
+}
+
+/* Sortable tables */
+/* Copyright 2006 Joost de Valk */
+a img {
+    border: 0;
+}
+/* Edited to fix table size */
+table.sortable {
+    border-spacing: 0;
+    border: 1px solid #000;
+    border-collapse: collapse;
+	table-layout: fixed; 
+	width: 800px;
+}
+table.sortable th, table.sortable td {
+    padding: 2px 4px 2px 4px;
+    /*width: 100px;*/
+    border-style: solid;
+    border-color: #444;
+}
+table.sortable th {
+    border-width: 0px 1px 1px 1px;
+    background-color: #ccc;
+    text-align: center;
+    text-decoration:none;
+}
+table.sortable td {
+    border-width: 0px 1px 0px 1px;
+    text-align: left;
+}
+table.sortable tr.odd td {
+    background-color: #ddd;
+}
+table.sortable tr.even td {
+    background-color: #fff;
+}
+table.sortable tr.sortbottom td {
+    border-top: 1px solid #444;
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+/* Broadcast styles */
+#url-part {
+    padding-top:1em;
+    
+    /*height:2em;*/
+   /* float:left;*/
+}
+
+#split-arrow{
+    background:#FFFFFF center no-repeat;
+    background-image: url(../images/split-arrow.png) ;
+    width: 22px;
+    height: 22px;
+    text-indent: -9999px;
+    display: block;
+    margin-right: 0.5em;
+    float:left;
+}
+
+#twitter-char-count{
+    /*margin-left: 1em;*/
+    font-family: courier;
+    font-weight:bold;
+    color: black;
+    float:left;   
+}
+
+#tinymce.mceContentBody{
+    background:#FBD38D;
+    font-family:"Arial";
+    font-size: 1em;
+}
+
+/* The error box */
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}

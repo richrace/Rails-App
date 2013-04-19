@@ -1,0 +1,63 @@
+
+one:
+    id: 1
+    title: "Title"
+    content: "Content"
+    feed_type: "Job"
+    user_id: 1
+    
+two: 
+    id: 2
+    title: "title"
+    content: "content"
+    feed_type: "Job"
+    user_id: 1
+
+three:
+    id: 3
+    title: "title"
+    content: "content"
+    feed_type: "Job"
+    user_id: 1
+
+four:    
+    id: 4
+    title: "title"
+    content: "content"
+    feed_type: "Job"
+    user_id: 1
+    
+contributor:
+    id: 5
+    title: "title"
+    content: "content"
+    feed_type: "Job"
+    user_id: 2
+    
+editor:
+    id: 6
+    title: "title"
+    content: "content"
+    feed_type: "Job"
+    user_id: 5
+    
+news_post:
+    id: 7
+    title: "title"
+    content: "content"
+    feed_type: "News"
+    user_id: 5
+
+n_contrib:
+    id: 8
+    title: "title"
+    content: "content"
+    feed_type: "Job"
+    user_id: 2
+
+n_editor:
+    id: 9
+    title: "title"
+    content: "content"
+    feed_type: "Job"
+    user_id: 5

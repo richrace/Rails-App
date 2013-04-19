@@ -1,0 +1,33 @@
+<h1>News</h1>
+
+<% if @newsblogs.length > 0 -%>
+<table class="sortable" id="sortabletable">
+  <tr>
+    <th width='35%'class='unsortable'>Title</th> 
+		<th width='20%'>Date sent</th>	
+    <th width='55%'class='unsortable'>Content</th>
+  </tr>
+<% @newsblogs.each do |news| %>
+  <tr>
+    <td>
+			<%= news.broadcast.title %> 
+		</td>
+		<td>
+			<%= news.created_at %>
+		</td>
+		<td>
+			<%=sanitize truncate(news.broadcast.content, :omission => '...', :length =>150) %> <%= link_to 'Read More', news %>
+		</td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<% end -%>
+<div class="digg_pagination">
+      <div clas="page_info">
+        <%= page_entries_info @newsblogs %>
+      </div>
+      <%= will_paginate @newsblogs, :container => false %>
+</div>
+<div><%= link_to 'RSS', :controller => 'newsblogs', :action => 'feed',:format => :rss %> | <%= link_to 'Atom', :controller => 'newsblogs', :action => 'feed',:format => 'atom' %></div>

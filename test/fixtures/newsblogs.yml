@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+    id: 1
+    broadcast_id: 3
+
+two:
+    id: 2
+    broadcast_id: 4
+    
+contributor:
+    id: 3
+    broadcast_id: 5
+
+editor:
+    id: 4
+    broadcast_id: 6
