@@ -48,7 +48,7 @@ GEM
       gem_plugin (~> 0.2.3)
     mongrel (1.2.0.pre2-x86-mingw32)
       gem_plugin (~> 0.2.3)
-    oauth (0.4.5)
+    oauth (0.5.5)
     paperclip (2.4.1)
       activerecord (>= 2.3.0)
       activesupport (>= 2.3.2)
